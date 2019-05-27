@@ -43,7 +43,7 @@ services:
             retries: 3
 
     flower:
-        image: metriq/airflow:1.10.3@
+        image: metriq/airflow:1.10.3
         restart: always
         depends_on:
             - redis
@@ -55,7 +55,7 @@ services:
         command: flower
 
     scheduler:
-        image: metriq/airflow:1.10.3@
+        image: metriq/airflow:1.10.3
         restart: always
         depends_on:
             - webserver
@@ -74,7 +74,7 @@ services:
         command: scheduler
 
     worker:
-        image: metriq/airflow:1.10.3@
+        image: metriq/airflow:1.10.3
         restart: always
         depends_on:
             - scheduler
