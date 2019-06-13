@@ -81,6 +81,9 @@ RUN apt-get update \
 COPY script/entrypoint.sh /entrypoint.sh
 COPY config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
 
+COPY requirements.txt /core_requirements.txt
+RUN pip install -r /core_requirements.txt
+
 RUN chown -R airflow: ${AIRFLOW_HOME}
 
 EXPOSE 8080 5555 8793
