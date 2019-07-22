@@ -3,7 +3,7 @@
 # DESCRIPTION: Basic Airflow container
 # BUILD: docker build --rm -t metriq/airflow .
 
-FROM python:3.6-slim
+FROM python:3.6.8-slim
 LABEL maintainer="Tupac"
 
 # Never prompts the user for choices on installation/configuration of packages
