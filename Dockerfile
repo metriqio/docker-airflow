@@ -1,10 +1,10 @@
 # VERSION 1.10.3
-# AUTHOR: Tupac Quiroga
+# AUTHOR: Tom
 # DESCRIPTION: Basic Airflow container
 # BUILD: docker build --rm -t metriq/airflow .
 
 FROM python:3.6.8-slim
-LABEL maintainer="Tupac"
+LABEL maintainer="Tom"
 
 # Never prompts the user for choices on installation/configuration of packages
 ENV DEBIAN_FRONTEND noninteractive
